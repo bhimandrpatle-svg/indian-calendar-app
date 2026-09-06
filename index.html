@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय कैलेंडर - Indian Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 भारतीय कैलेंडर</h1>
+            <p class="subtitle">Indian Calendar in Hindi</p>
+        </header>
+
+        <div class="calendar-wrapper">
+            <div class="controls">
+                <button id="prevMonth" class="btn">← पिछला महीना</button>
+                <div class="month-year" id="monthYear"></div>
+                <button id="nextMonth" class="btn">अगला महीना →</button>
+            </div>
+
+            <div class="info-section">
+                <div class="today-info" id="todayInfo"></div>
+            </div>
+
+            <table class="calendar-table" id="calendarTable">
+                <thead>
+                    <tr>
+                        <th>रविवार</th>
+                        <th>सोमवार</th>
+                        <th>मंगलवार</th>
+                        <th>बुधवार</th>
+                        <th>गुरुवार</th>
+                        <th>शुक्रवार</th>
+                        <th>शनिवार</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+
+            <div class="festivals-section">
+                <h2>🎉 भारतीय त्योहार और छुट्टियां</h2>
+                <ul id="festivalsList" class="festivals-list"></ul>
+            </div>
+
+            <div class="legend">
+                <h3>🔍 किंवदंती</h3>
+                <div class="legend-item">
+                    <span class="legend-box today"></span>
+                    <span>आज</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-box festival"></span>
+                    <span>त्योहार</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-box holiday"></span>
+                    <span>राष्ट्रीय छुट्टी</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h2>ℹ️ भारतीय कैलेंडर के बारे में</h2>
+            <div class="info-content">
+                <p><strong>भारतीय राष्ट्रीय कैलेंडर:</strong> यह कैलेंडर शक संवत् पर आधारित है, जो 78 ईस्वी से शुरू होता है।</p>
+                <p><strong>महीने:</strong> भारतीय कैलेंडर में 12 महीने हैं जिनकी अवधि 30 या 31 दिनों की है।</p>
+                <p><strong>त्योहार:</strong> भारत विभिन्न धार्मिक और सांस्कृतिक त्योहारों की भूमि है।</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
